@@ -1,0 +1,141 @@
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 4%;
+    /* background-color: aquamarine; */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 4%;
+}
+
+.logo a{
+    color: #FF488E;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.ul{
+    display: flex;
+    align-items: center;
+}
+
+.ul li{
+    padding: 0 15px;
+}
+
+.ul li a{
+    color: #FF488E;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.ul li a::after{ /*vai criar outro elemento depois da tag a*/
+    content: "";
+    background-color: #FF488E;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: .3s;
+}
+
+.ul li a:hover::after{
+    width: 100%;
+}
+
+button{
+    background-color: #FF488E;
+    border: none;
+    color: #FAFAFA;
+    padding: 10px 20px;
+    font-size: 17px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-nav{
+    margin-left: 20px;
+    background-color: #FF488E;
+    border: none;
+    color: #FAFAFA;
+    padding: 10px 20px;
+    font-size: 17px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+button:hover, .btn-nav:hover{
+    animation: animate-outline 1s ease-out;
+}
+
+@keyframes animate-outline {
+    from{
+        outline: 0px solid #FF488E;
+    }
+    to{
+        outline: 8px solid #ffcae0;
+    }
+    
+}
+
+.btn-hamburguer{
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 970px){
+    /*fazendo o botão hamburguer aparecer*/
+    .btn-hamburguer{
+        display: block;
+    }
+
+    /*fazendo as opções do nav sumirem*/
+    .ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #FF488E;
+        transform: translateX(-100%);
+        transition: .3s ease-in;
+    }
+
+    /*opções do nav aparecerem*/
+    .ul.active{
+        transform: translateX(0);
+    }
+
+    .ul li{
+        padding: 20px;
+    }
+
+    .ul li a{
+        color: #FAFAFA;
+        font-size: 18px;
+    }
+
+    .contato{
+        background-color: #FAFAFA;
+        color: #FF488E;
+        margin: 10px 0;
+    }
+
+    button{
+        font-size: 24px;
+    }
+}
+

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="/estilos/style-nav.css">
+    <link rel="stylesheet" href="/estilos/style-section.css">
+    <link rel="stylesheet" href="/estilos/style-section2.css">
+    <link rel="stylesheet" href="/estilos/style-section3.css">
+    <link rel="stylesheet" href="/estilos/style-section4.css">
+    <link rel="stylesheet" href="/estilos/style-footer.css">
+    <title>Meu Site</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="#">MeuSite</a>
+                </div>
+
+                <ul class="ul" id="ul">
+                    <li><a href="#section-1" id="home">Home</a></li>
+                    <li><a href="#section-2" id="historia">Minha História</a></li>
+                    <li><a href="#section-3" id="tec">Tecnologias</a></li>
+                    <a href="#section-4" class="contato btn-nav">Contate-me</a>
+                </ul>
+
+                <div class="btn-hamburguer" id="btn-hamburguer">
+                    <img id="icone-btn-hamburguer" src="/imagens/menu.png" alt="Botão em formato hambúrguer">
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section1" id="section-1">
+                <div class="informacao">
+                    <h2>Bem vindo! Eu sou a</h2>
+                    <h1>Linda Hillary</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                    of type and scrambled it to make a type specimen book.</p>
+
+                    <div class="midias-sociais">
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                        <a href=""><i class="fa fa-github"></i></a>
+                        <a href=""><i class="fa fa-at"></i></a>
+                    </div>
+
+                    <div class="contate-me">
+                        <a href="#section-4" class="btn-nav">Contate-me</a>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <img src="/imagens/Avatar-Maker.svg" alt="Uma imagem ilustrativa de uma avatar rindo">
+                </div>
+            </section>
+            <!------------------------FIM DA PRIMEIRA SECTION--------------------------->
+
+            <section class="section2" id="section-2">
+                <div class="avatar2">
+                    <img src="/imagens/Avatar-simpatica.svg" alt="Imagem ilustrativa de uma avada rindo simpático">
+                </div>
+
+                <div class="text-info">
+                    <h2>Minha História</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fauciales dui dolor et neque.Etiam sagittis turpis sem.Lorem ipsum dolor sit amet, consectetuis, eleifend commodo li, libero orci
+                        convallis metus, consequat sodales dui dolor et neque.Etiam sagittis turpis sem.Lorem ipsum dolor sit amet, consectetuis, eleifend commodo li, libero orci
+                        convallis metus, consequat sodales dui dolor et neque.Etiam sagittis turpis sem.
+                    </p>
+                </div>
+
+                <div class="divisao">
+                    <div class="text-info">
+                        <h2>Dificuldades</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuis, eleifend commodo li, libero orci
+                            convallis metus, consequat sodales dui dolor et neque.Etiam sagittis turpis sem.dolor et neque.Etiam sagittis turpis sem.Lorem ipsum dolor sit amet, consectetuis, eleifend commodo li, libero orci
+                            convallis metus, consequat sodales dui dolor et neque.Etiam sagittis turpis sem
+                        </p>
+                    </div>
+
+                    <div class="text-info">
+                        <h2>Aprendizados</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectus, consequat sodales dui dolor et neque.Etiam sagittis turpis sem.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!------------------------FIM DA SEGUNDA SECTION--------------------------->
+
+            <section class="section3" id="section-3">
+                <h1 class="titulo-section">Principais Tecnologias</h1>
+
+                <div class="cards">
+                    <!--Card 1-->
+                    <div class="card">
+                        <div class="img">
+                            <img src="/imagens/figma-logo.696x1024.png" alt="Figma">
+                        </div>
+                        <h1>Figma</h1>
+                        <div class="content">
+                            <h2>Conhecimento: </h2>
+                            <p>Intermediário</p>
+                        </div>
+                    </div>
+
+                    <!--Card 2-->
+                    <div class="card">
+                        <div class="img">
+                            <img src="/imagens/html5.png" alt="HTML5">
+                        </div>
+                        <h1>HTML5</h1>
+                        <div class="content">
+                            <h2>Conhecimento: </h2>
+                            <p>Básico</p>
+                        </div>
+                    </div>
+
+                    <!--Card 3-->
+                    <div class="card">
+                        <div class="img">
+                            <img src="/imagens/css3.png" alt="CSS3">
+                        </div>
+                        <h1>CSS3</h1>
+                        <div class="content">
+                            <h2>Conhecimento: </h2>
+                            <p>Básico</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!------------------------FIM DA TERCEIRA SECTION--------------------------->
+
+            <section class="section4" id="section-4">
+                <h1 class="titulo-section">Contato</h1>
+                <form class="formulario">
+                    <label for="inputNome">Primeiro nome:</label>
+                    <input type="text" id="inputNome">
+
+                    <label for="inputEmail">Endereço de e-mail:</label>
+                    <input type="email" id="inputEmail">
+
+                    <label for="textAreaMensagem">Mensagem:</label>
+                    <textarea name="textAreaMensagem" id="textAreaMensagem" cols="30" rows="4"></textarea>
+
+                    <div class="area-btn-form">
+                        <button class="btn-form">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </section>
+<!------------------------FIM DA QUARTA SECTION--------------------------->
+        </main>
+
+        <footer>
+            <div class="descricao">
+                <h1>Desenvolvido por Linda Hillary</h1>
+            </div>
+        </footer>
+    </div>
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>

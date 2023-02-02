@@ -1,0 +1,11 @@
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.descricao h1{
+    font-size: 1rem;
+    color: #FF488E;
+    font-weight: normal;
+}
